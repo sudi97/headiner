@@ -110,6 +110,6 @@ console.log('Error sharing', error));}
 ```
 
 ### Thank You.
-Headliner is developed as a hobby project of mine. Feel free to fork and develop :smile: :v:. for any help or suggestions drop a [mail](mailto:soulsam480@gmail.com) .
+Headliner is developed as a hobby project of mine. Feel free to fork and develop :smile: :v:. for any help or suggestions drop a [mail](mailto:sahoosudipta97@gmail.com) .
 
 
