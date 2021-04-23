@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+html,
+body {
+  padding: 5px 5px 0 5px;
+  margin: 0px;
+  font-family: "Slabo 27px", serif;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding: 0 0 10px 0;
+}
+.nav-link {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+}
+.nav-link2 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 2px 2px;
+}
+.nav-link2:hover {
+  background-color: #252525;
+  color: white;
+}
+.darkmode .content nav .nav-link2:hover {
+  background-color: white;
+  color: black;
+}
+
+.ad2hs-prompt {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0px 10px 0;
+  border-radius: 10px;
+  border: 1px solid #888;
+  width: 70%;
+  line-height: 1.7em;
+}
+@media only screen and (min-width: 768px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0px 10px 0;
+    border-radius: 10px;
+    border: 1px solid #888;
+    width: 20%;
+    line-height: 1.7em;
+  }
+}
+#news li img {
+  max-width: 100%;
+  height: auto;
+}
+
+#news li a {
+  padding: 2px;
+  background-color: black;
+  color: white;
+}
+
+#news li a b {
+  color: black;
+  padding: 2px;
+}
+.techul li img {
+  max-width: 100%;
+  height: auto;
+  margin:0 !important;
+}
+
+.techul li a {
+  padding: 2px;
+
+}
+
+.techul li a b {
+  color: black;
+  padding: 2px;
+}
+/* The CSS code for the toggle switch*/
+.switch {
+  position: relative;
+  width: 53px;
+  display: inline-block;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333333;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  content: url(./img/moon.png);
+  color: black;
+}
+
+.darkmode {
+  background-color: #252525;
+  color: white;
+}
+.darkmode a {
+  color: white;
+}
+.darkmode #news li a{
+  background-color: white;
+  color: black;
+} 
+.darkmode #news li a b {
+  color: white;
+}
+
+#news li p img {
+  width: 100%;
+  height: auto;
+}
+
+.darkmode #news li a b {
+  color: white;
+}
+
+.techul li p img {
+  width: 100%;
+  height: auto;
+}
+.washare {
+  background-color: unset !important;
+}
+.washare img {
+  float: right;
+  clear: both;
+  vertical-align: middle;
+  display: inline;
+  width: 35px;
+}
+
+.ul-head {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-bottom: 5px;
+}
+.darkmode .ul-head {
+  background-color: white;
+  color: black;
+}
+.main-nav{
+  background-color: rgb(214, 214, 214);
+  margin-bottom:10px;
+  padding: 8px 0 8px 0;
+}
+@media   screen and (max-width:768px){
+  .main-nav{
+    display:none;
+  }
+}
+@media screen and (min-width:768px){
+  .main-bt{
+    display: none;
+  }
+}
+.darkmode .content .main-nav{
+  background-color:rgb(53, 53, 53);
+}
+.darkmode .content .main-bt{
+  background-color:rgb(214, 214, 214);
+  border-top: 1px solid rgba(255, 255, 255, 0.795);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.795);
+  color: black !important;
+} 
+.darkmode .content .main-bt a{
+  color: black !important;
+} 
+.main-bt{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgb(53, 53, 53);
+  text-align: center;
+  width: 100%;
+  padding: 8px 0 8px 0;
+  border-top: 1px solid hsla(0, 0%, 0%, 0.795);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.795);
+  color: white;
+}
+.main-bt a{
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 1002px;
+}
+
+.darkmode .main-menu-wrap{
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+.darkmode .hamburger{
+  background-color:rgb(214, 214, 214);
+}
+.darkmode .hamburger span{
+  background-color:rgb(53, 53, 53) ;
+}
+.darkmode .hamburger span:before, .hamburger span:after{
+  background-color:rgb(53, 53, 53) ;
+
+}
+
+.darkmode  .hamburger span:after{
+  background-color:rgb(53, 53, 53) ;
+
+}
+.darkmode th{
+  background-color:rgb(214, 214, 214) ;
+  color: black;
+}
+th{
+  background-color:rgb(53, 53, 53) ;
+  color: white;
+}
+.nytimg{
+  width:100%;
+  height: auto;
+  margin: auto;
+}
