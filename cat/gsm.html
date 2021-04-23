@@ -88,87 +88,88 @@
       <span>
         <a href="../infitech.html" class="nav-link2">Infi-Tech</a>
       </span>
- <!--the feature nav on destop-->
- <span>|</span>
- <span>
-   <div class="dropdown" id="dp1">
-     <a class="nav-link2">Explore</a>
-     <div class="dropdown-content" id="dpc1">
-       <a href="mash.html">NYT Tech</a>
-       <a href="ars.html">Ars Technica</a>
-       <a href="g360.html">Gadgets 360</a>
-       <a href="gsm.html">GSMArena</a>
-     </div>
-   </div>
- </span>
- <span>|</span>
- <span>
-   <div class="dropdown" id="dp2">
-     <a class="nav-link2">More</a>
-     <div class="dropdown-content" id="dpc2">
-       <a href="../about.html">About</a>
-       <a href="../contact.html">COntact</a>
-     </div>
-   </div>
- </span>
- <!--the desktop feature nav end-->
+      <!--the feature nav on destop-->
+      <span>|</span>
+      <span>
+        <div class="dropdown" id="dp1">
+          <a class="nav-link2">Explore</a>
+          <div class="dropdown-content" id="dpc1">
+            <a href="mash.html">NYT Tech</a>
+            <a href="ars.html">Ars Technica</a>
+            <a href="g360.html">Gadgets 360</a>
+            <a href="gsm.html">GSMArena</a>
+          </div>
+        </div>
+      </span>
+      <span>|</span>
+      <span>
+        <div class="dropdown" id="dp2">
+          <a class="nav-link2">More</a>
+          <div class="dropdown-content" id="dpc2">
+            <a href="../about.html">About</a>
+            <a href="../contact.html">COntact</a>
+          </div>
+        </div>
+      </span>
+      <!--the desktop feature nav end-->
     </nav>
-      <!-- The bottom nav on mobile phones. display none in desktop-->
-      <nav  class="main-bt">
-     
-        <span>
-          <a href="../index.html" class="nav-link2">Headliner</a>
-        </span>
-        <span>|</span>
-        <span>
-          <a href="../infiliner.html" class="nav-link2">Infi-News</a>
-        </span>
-        <span>|</span>
-        <span>
-          <a href="../infitech.html" class="nav-link2">Infi-Tech</a>
-        </span>
-  
-      </nav>
-     <!-- the feature nav starts here will be same across whole page-->
-     <a class="hamburger menu-btn"  href="javascript:void(0)"><span></span></a>
+    <!-- The bottom nav on mobile phones. display none in desktop-->
+    <nav class="main-bt">
 
-     <div class="main-menu-wrap">
+      <span>
+        <a href="../index.html" class="nav-link2">Headliner</a>
+      </span>
+      <span>|</span>
+      <span>
+        <a href="../infiliner.html" class="nav-link2">Infi-News</a>
+      </span>
+      <span>|</span>
+      <span>
+        <a href="../infitech.html" class="nav-link2">Infi-Tech</a>
+      </span>
+
+    </nav>
+    <!-- the feature nav starts here will be same across whole page-->
+    <a class="hamburger menu-btn" href="javascript:void(0)"><span></span></a>
+
+    <div class="main-menu-wrap">
       <div class="main-menu">
         <table>
-            <tr>
-              <th>Explore</th>
-              <th>More</th>
-            </tr>
-            <tr>
-              <td><a href="mash.html">NYT Tech</a></td>
-              <td>
-                <a href="../about.html">About</a>      
-              </td>            </tr>
-            <tr>
-              <td><a href="ars.html">Ars Technica</a></td>
-              <td>
-                <a href="../contact.html">Contact</a>      
-              </td>
-            </tr>
-            <tr>  
-              <td><a href="g360.html">Gadgets 360</a></td>
-            </tr>
-            <tr>
-              <td><a href="gsm.html" style="font-weight: bold;" >GSMArena</a></td>
-            </tr>
-           
-          </table>
+          <tr>
+            <th>Explore</th>
+            <th>More</th>
+          </tr>
+          <tr>
+            <td><a href="mash.html">NYT Tech</a></td>
+            <td>
+              <a href="../about.html">About</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="ars.html">Ars Technica</a></td>
+            <td>
+              <a href="../contact.html">Contact</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="g360.html">Gadgets 360</a></td>
+          </tr>
+          <tr>
+            <td><a href="gsm.html" style="font-weight: bold;">GSMArena</a></td>
+          </tr>
+
+        </table>
       </div>
     </div>
     <div>
-        <h3 class="ul-head">GSMArena</h3>
+      <h3 class="ul-head">GSMArena</h3>
       <ul id="verge" class="techul"></ul>
 
     </div>
 
     <p style="text-align: center; font-weight:700;">
       With 🧡 from
-      <a href="https://sambitsahoo2.cf">Sambit Sahoo</a>
+      <a href="https://sudiptasahoo2.cf">sudipta sahoo</a>
     </p>
     <br>
     <br>
@@ -178,59 +179,59 @@
 <script src="../assets/js/common.js">
 
 </script>
-<script>    
-    $(document).ready(() => {
+<script>
+  $(document).ready(() => {
     const url = "https://www.gsmarena.com/rss-news-reviews.php3";
     const ul = document.getElementById("verge");
 
     function createNode(element) {
-        return document.createElement(element); // Create the type of element you pass in the parameters
+      return document.createElement(element); // Create the type of element you pass in the parameters
     }
 
     function append(parent, el) {
-        return parent.appendChild(el); // Append the second parameter(element) to the first one
+      return parent.appendChild(el); // Append the second parameter(element) to the first one
     }
 
     feednami.load(url, result => {
-        if (result.error) {
-        } else {
-            var entries = result.feed.entries;
-            for (var i = 0; i < entries.length; i++) {
-                var entry = entries[i];
-                return entries.map(entry => {
-                    let li = createNode("li");
-                    p = createNode("p");
-                    link = createNode("a");
-                    line = createNode("span");
-                    h4 = createNode("h3");
-                    link4 = createNode("a");
+      if (result.error) {
+      } else {
+        var entries = result.feed.entries;
+        for (var i = 0; i < entries.length; i++) {
+          var entry = entries[i];
+          return entries.map(entry => {
+            let li = createNode("li");
+            p = createNode("p");
+            link = createNode("a");
+            line = createNode("span");
+            h4 = createNode("h3");
+            link4 = createNode("a");
 
-                    link4.setAttribute(
-                        "onclick",
-                        "if (navigator.share) {navigator.share({title:'" +
-                        entry.title +
-                        "',text:'shared from Headliner',url: '" +
-                        entry.link +
-                        "',}).then(() => console.log('Successful share'))}"
-                    );
-                    link4.innerHTML = `${'<img src="https://img.icons8.com/flat_round/64/000000/share--v1.png"/>'}`;
-                    link4.setAttribute("class", "washare");
-                    line.innerHTML = `${"<hr>"}`;
-                    h4.innerHTML = `${entry.title + "  <small>-GSMArena</small>"}`;
-                    p.innerHTML = `${entry.summary}`;
-                    link.setAttribute("href", entry.link);
-                    link.setAttribute("target", "_blank");
-                    append(li, h4);
-                    append(li, link);
-                    append(link, p);
-                    append(li, link4);
-                    append(li, line);
-                    append(ul, li);
-                });
-            }
+            link4.setAttribute(
+              "onclick",
+              "if (navigator.share) {navigator.share({title:'" +
+              entry.title +
+              "',text:'shared from Headliner',url: '" +
+              entry.link +
+              "',}).then(() => console.log('Successful share'))}"
+            );
+            link4.innerHTML = `${'<img src="https://img.icons8.com/flat_round/64/000000/share--v1.png"/>'}`;
+            link4.setAttribute("class", "washare");
+            line.innerHTML = `${"<hr>"}`;
+            h4.innerHTML = `${entry.title + "  <small>-GSMArena</small>"}`;
+            p.innerHTML = `${entry.summary}`;
+            link.setAttribute("href", entry.link);
+            link.setAttribute("target", "_blank");
+            append(li, h4);
+            append(li, link);
+            append(link, p);
+            append(li, link4);
+            append(li, line);
+            append(ul, li);
+          });
         }
+      }
     });
-}); 
+  });
 </script>
 
 </html>

@@ -1,8 +1,8 @@
 # Headliner :newspaper:
-A progressive web app(PWA) which fetches news from a news API. [Visit Headliner](https://soulsam480.github.io/headliner) 
+A progressive web app(PWA) which fetches news from a news API. [Visit Headliner](https://sudi97.github.io/headliner) 
 ## Infiliner :rocket:
 infiliner is a rss news aggregator which collects and shows rss news articles from various news providers. It is inside the same Web app as Headliner.
-[Visit Infiliner](https://soulsam480.github.io/infiliner)
+[Visit Infiliner](https://sudi97.github.io/infiliner)
 ### How it's done ?
 #### Headliner>
 It uses the javascript **fetch()** API to get information from an API endpoint. It makes async request instead of using the traditional XMLHttp request. The information from the api gets transformed into a **json** object. As the news articles come as a js array its easy to map them to html elements uding js array method **map()**. 
